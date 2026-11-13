@@ -17,6 +17,9 @@ body { background: var(--bg); color: var(--fg); font-family: var(--body); font-s
 main { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 h1 { font-family: var(--display); font-size: 2rem; margin: 0 0 4px; text-wrap: balance; }
 .meta { color: var(--muted); font-size: .9rem; margin: 0 0 28px; }
+h3 { font-size: 1rem; margin: 18px 0 4px; }
+ol.toc { columns: 2; column-gap: 28px; padding-inline-start: 22px; } @media (max-width: 560px) { ol.toc { columns: 1 } }
+.box { border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 0 0 14px; }
 h2 { font-size: 1.15rem; margin: 30px 0 6px; color: var(--accent); text-wrap: balance; }
 p, li { margin: 0 0 10px; }
 ul { padding-inline-start: 22px; margin: 0 0 10px; }
@@ -30,53 +33,196 @@ nav { display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 24px; font-weight: 
 <body>
 <main>
   <nav><a href="index.html">Haven</a><a href="privacy.html">פרטיות · Privacy</a><a href="support.html">תמיכה · Support</a></nav>
-  <h1>Haven – מדיניות פרטיות</h1>
-  <p class="meta">עודכן לאחרונה: 13 בנובמבר 2026</p>
-  <section>
-    <h2>בקצרה</h2>
-    <p>Haven אינה אוספת, שולחת, מוכרת או משתפת מידע אישי עם המפתח או עם אף גורם אחר. אין באפליקציה חשבון, אנליטיקה, פרסומות או שרת של המפתח.</p>
+    <h1>Haven – מדיניות פרטיות</h1>
+  <p class="meta">בתוקף מיום 13 בנובמבר 2026 · גרסה 1.0</p>
+
+  <div class="box">
+    <p><strong>בקצרה:</strong> Haven פועלת על המכשירים שלך. המפתח אינו מפעיל שרתים עבור האפליקציה, אינו אוסף מידע אישי, אינו משתמש באנליטיקה או בפרסומות, ואינו מוכר או משתף מידע. המידע על הבית שלך נשמר אצלך: במכשירים שלך, בחשבון iCloud שלך וב-Haven Hub שלך, אם התקנת אותו. כשאתה מחבר שירות של צד שלישי, Haven מתקשרת איתו ישירות ובשמך, רק כדי לבצע את מה שביקשת.</p>
+  </div>
+
+  <ol class="toc">
+    <li><a href="#s1">מי אנחנו ועל מה חלה המדיניות</a></li>
+    <li><a href="#s2">מידע שהמפתח אינו אוסף</a></li>
+    <li><a href="#s3">מידע שנשמר במכשירים שלך</a></li>
+    <li><a href="#s4">סנכרון ושיתוף עם בני הבית</a></li>
+    <li><a href="#s5">Haven Hub</a></li>
+    <li><a href="#s6">שירותים ומכשירים של צד שלישי</a></li>
+    <li><a href="#s7">מידע מ-HomeKit ומ-Apple Home</a></li>
+    <li><a href="#s8">הרשאות המכשיר</a></li>
+    <li><a href="#s9">בינה מלאכותית ועיבוד קול</a></li>
+    <li><a href="#s10">מצלמות, הקלטות ותמונות</a></li>
+    <li><a href="#s11">אבטחת מידע</a></li>
+    <li><a href="#s12">שמירה, גיבוי ומחיקה</a></li>
+    <li><a href="#s13">הזכויות שלך</a></li>
+    <li><a href="#s14">ילדים</a></li>
+    <li><a href="#s15">העברת מידע מחוץ לישראל</a></li>
+    <li><a href="#s16">שינויים במדיניות</a></li>
+    <li><a href="#s17">יצירת קשר</a></li>
+  </ol>
+
+  <section id="s1">
+    <h2>1. מי אנחנו ועל מה חלה המדיניות</h2>
+    <p>מדיניות זו מתארת כיצד אפליקציית Haven לאייפון, לאייפד, למק ול-Apple Watch ("האפליקציה"), ותוכנת Haven Hub הנלווית ("Hub"), מטפלות במידע. האפליקציה פותחה ומופצת על ידי Nadav Behar ("המפתח", "אנחנו").</p>
+    <p>המדיניות נכתבה בהתאם לחוק הגנת הפרטיות, התשמ"א–1981 ותקנותיו (לרבות תיקון מס' 13), ובהתחשב בתקנות הגנת המידע האירופיות (GDPR), בחוקי הפרטיות של קליפורניה (CCPA/CPRA) ובהנחיות App Store של Apple. השימוש באפליקציה כפוף גם ל<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">הסכם הרישיון הסטנדרטי של Apple</a>.</p>
+    <p>מכיוון שהמפתח אינו אוסף מידע אישי ואינו מעבד אותו, המפתח אינו "בעל מאגר מידע" ואינו "בעל שליטה" (Controller) במידע שנשמר במכשירים ובחשבונות שלך. אתה השולט במידע שלך.</p>
   </section>
-  <section>
-    <h2>איפה נשמר המידע על הבית</h2>
+
+  <section id="s2">
+    <h2>2. מידע שהמפתח אינו אוסף</h2>
+    <p>המפתח אינו אוסף, אינו מקבל, אינו שומר ואינו מעבד מידע אישי מהאפליקציה. בפרט:</p>
     <ul>
-      <li><strong>במכשירים שלך:</strong> תוכנית הבית, החדרים, המכשירים, האוטומציות וההגדרות.</li>
-      <li><strong>ב-iCloud שלך:</strong> אם הפעלת סנכרון, כדי שהמידע יופיע באייפון, באייפד ובמק שלך ואצל בני הבית שהזמנת. המפתח לא יכול לגשת אליו.</li>
-      <li><strong>סיסמאות וטוקנים</strong> של שירותים שחיברת (למשל Tuya או eWeLink) נשמרים ב-Keychain של המכשיר, ומסונכרנים ב-iCloud Keychain שלך.</li>
-      <li><strong>Haven Hub</strong> (לא חובה) רץ על המק שלך, ברשת הביתית שלך.</li>
+      <li>אין הרשמה, אין חשבון משתמש ואין כניסה לשרת של המפתח.</li>
+      <li>אין כלי אנליטיקה, אין מעקב (Tracking) ואין מזהי פרסום. האפליקציה אינה משתמשת ב-IDFA.</li>
+      <li>אין פרסומות ואין ערכות פיתוח (SDK) של צדדים שלישיים לאיסוף נתונים.</li>
+      <li>המפתח אינו מוכר מידע, אינו "משתף" אותו לצורכי פרסום, ואינו משתמש בו לבניית פרופילים.</li>
+    </ul>
+    <p><strong>דוחות קריסה:</strong> אם בחרת בהגדרות המכשיר לשתף ניתוחים עם מפתחים, Apple עשויה להעביר למפתח דוחות קריסה ונתוני ביצועים מצטברים. Apple מעבירה אותם בלי שמך ובלי פרטי קשר, והם משמשים רק לתיקון תקלות. אפשר לבטל זאת בכל עת: הגדרות ← פרטיות ואבטחה ← ניתוח ושיפורים.</p>
+  </section>
+
+  <section id="s3">
+    <h2>3. מידע שנשמר במכשירים שלך</h2>
+    <p>כדי לפעול, האפליקציה שומרת במכשירים שלך את המידע שאתה מזין או מחבר. המפתח אינו יכול לגשת אליו:</p>
+    <ul>
+      <li>תוכנית הבית והמודל התלת-ממדי: חדרים, קומות, ריהוט, גינה, מבנים ורחוב.</li>
+      <li>רשימת המכשירים, שמותיהם, מיקומם בבית ומצבם, ובכלל זה כתובות רשת מקומיות.</li>
+      <li>אוטומציות, כללי הכרזה, מועדפים והגדרות.</li>
+      <li>מיקום הבית (קו רוחב ואורך), אם הזנת אותו, לחישוב זריחה ושקיעה.</li>
+      <li>היסטוריית אירועים (למשל "הדלת נפתחה") וצריכת אנרגיה.</li>
+      <li><strong>סיסמאות, מפתחות API וטוקנים</strong> של שירותים שחיברת נשמרים ב-Keychain, מאגר הסודות המוצפן של Apple, ולא בקבצים רגילים.</li>
     </ul>
   </section>
-  <section>
-    <h2>חיבור לשירותים של צד שלישי</h2>
-    <p>כשאתה מחבר חשבון או מכשיר (למשל Tuya, eWeLink, Shelly, Switcher, מצלמות או Google Drive), Haven מתקשרת ישירות עם השירות או המכשיר הזה בשמך, רק כדי להפעיל את מה שביקשת. השימוש בשירותים אלה כפוף למדיניות הפרטיות שלהם.</p>
-  </section>
-  <section>
-    <h2>הרשאות</h2>
+
+  <section id="s4">
+    <h2>4. סנכרון ושיתוף עם בני הבית</h2>
     <ul>
-      <li><strong>HomeKit:</strong> להצגה ולשליטה במכשירים שלך.</li>
-      <li><strong>רשת מקומית:</strong> לאיתור מכשירים ומצלמות בבית ולשליטה בהם.</li>
-      <li><strong>מיקום:</strong> רק לחישוב שעות הזריחה והשקיעה לאוטומציות.</li>
-      <li><strong>מצלמה ו-LiDAR:</strong> רק לסריקת חדרים לבניית המודל, אם בחרת בכך.</li>
-      <li><strong>מיקרופון:</strong> רק לדיבור דרך מצלמות ופעמון, אם בחרת בכך.</li>
+      <li><strong>iCloud:</strong> אם הסנכרון פעיל, ההגדרות מסונכרנות בין המכשירים שלך דרך חשבון iCloud שלך (CloudKit ו-iCloud Keychain). המידע נשמר אצל Apple, בכפוף ל<a href="https://www.apple.com/legal/privacy/">מדיניות הפרטיות של Apple</a>. אין למפתח גישה אליו.</li>
+      <li><strong>רשת מקומית:</strong> מכשירי Haven שלך שנמצאים באותה רשת ביתית יכולים לסנכרן ביניהם ישירות, בלי לעבור דרך האינטרנט.</li>
+      <li><strong>בני בית:</strong> אם הזמנת בני בית, הם יקבלו גישה להגדרות הבית ולהרשאות הדרושות לשליטה במכשירים, כולל מפתחות שירותים משותפים. הזמן רק אנשים שאתה סומך עליהם, ואפשר לבטל שיתוף בכל עת.</li>
     </ul>
   </section>
-  <section>
-    <h2>מחיקה</h2>
-    <p>מחיקת האפליקציה מוחקת את המידע מהמכשיר. מידע שסונכרן נמחק מ-iCloud דרך הגדרות ← [השם שלך] ← iCloud.</p>
+
+  <section id="s5">
+    <h2>5. Haven Hub</h2>
+    <p>Haven Hub היא תוכנה לא חובה שאתה מתקין על מחשב Mac שלך. היא פועלת ברשת הביתית שלך ומרחיבה את השליטה במצלמות, בטלוויזיה, בהכרזות בהום פוד ובמכשירים נוספים. ה-Hub שומר במחשב שלך את ההגדרות, את פרטי החיבור לשירותים שחיברת אליו, תמונות ממצלמות וגיבויים שיצרת. הגישה אליו מהאפליקציה מוגנת באסימון גישה. ה-Hub אינו שולח מידע למפתח.</p>
   </section>
-  <section>
-    <h2>יצירת קשר</h2>
-    <p>שאלות על המדיניות: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+
+  <section id="s6">
+    <h2>6. שירותים ומכשירים של צד שלישי</h2>
+    <p>כשאתה בוחר לחבר שירות או מכשיר, האפליקציה או ה-Hub מתקשרים איתו ישירות, בשמך ובאמצעות החשבון שלך, רק כדי להציג מידע ולבצע פקודות שביקשת. המידע הנשלח מוגבל לנדרש לפעולה, למשל פרטי התחברות, פקודת הדלקה או בקשה לשידור וידאו. דוגמאות:</p>
+    <ul>
+      <li>מכשירים ופלטפורמות בית חכם: Tuya / Smart Life, eWeLink (Sonoff), Shelly, Switcher, Miele, PalGate, Eufy, Baseus, טלוויזיות Samsung ומכשירי Matter.</li>
+      <li>אחסון: Google Drive, אם בחרת לשמור בו אירועים ותמונות. הקבצים נשמרים בחשבון Google שלך.</li>
+      <li>קולות להכרזות: Google, OpenAI, ElevenLabs, Cartesia או Gemini, אם הזנת מפתח משלך. במקרה זה טקסט ההכרזה נשלח לספק כדי ליצור את הקול.</li>
+    </ul>
+    <p>השימוש בשירותים אלה כפוף לתנאים ולמדיניות הפרטיות של כל ספק. המפתח אינו אחראי לאופן שבו ספקים אלה מטפלים במידע. אפשר לנתק כל שירות בכל עת מהגדרות האפליקציה.</p>
   </section>
-  <section class="en" dir="ltr" lang="en">
+
+  <section id="s7">
+    <h2>7. מידע מ-HomeKit ומ-Apple Home</h2>
+    <p>האפליקציה ניגשת לנתוני HomeKit רק כדי להציג את הבית שלך ולשלוט בו לבקשתך. בהתאם לדרישות Apple, נתוני HomeKit אינם משמשים לפרסום או לכריית מידע, אינם נמסרים לצדדים שלישיים ואינם משמשים לשום מטרה אחרת מלבד הפעלת האפליקציה.</p>
+  </section>
+
+  <section id="s8">
+    <h2>8. הרשאות המכשיר</h2>
+    <p>האפליקציה מבקשת הרשאות רק כשהן נדרשות. אפשר לבטל כל הרשאה בהגדרות המכשיר, והאפליקציה תמשיך לפעול בלי התכונה הקשורה אליה:</p>
+    <ul>
+      <li><strong>HomeKit:</strong> להצגה ולשליטה במכשירי הבית.</li>
+      <li><strong>רשת מקומית:</strong> לאיתור מכשירים, מצלמות וה-Hub בבית ולתקשורת ישירה איתם.</li>
+      <li><strong>מיקום:</strong> רק בזמן השימוש, לחישוב זריחה ושקיעה. המיקום אינו נשלח לאף גורם.</li>
+      <li><strong>מצלמה ו-LiDAR:</strong> לסריקת חדרים לבניית המודל. הסריקה מעובדת במכשיר.</li>
+      <li><strong>מיקרופון:</strong> לדיבור דרך מצלמות ופעמון, רק כשאתה מפעיל זאת.</li>
+      <li><strong>התראות:</strong> להתראות על אירועים בבית. ההתראות נוצרות במכשיר או ב-Hub שלך.</li>
+    </ul>
+  </section>
+
+  <section id="s9">
+    <h2>9. בינה מלאכותית ועיבוד קול</h2>
+    <p>העוזר באפליקציה פועל במנוע מקומי, או באמצעות Apple Intelligence במכשירים התומכים בכך. Apple Intelligence מעבדת את הבקשות במכשיר עצמו, בכפוף למדיניות של Apple. המפתח אינו מקבל את מה שאתה כותב לעוזר.</p>
+  </section>
+
+  <section id="s10">
+    <h2>10. מצלמות, הקלטות ותמונות</h2>
+    <p>שידורים ותמונות ממצלמות מועברים ישירות מהמצלמה, מהשירות שלה או מה-Hub אל המכשיר שלך, ונשמרים רק במקומות שבחרת. אם אתה מתקין מצלמות, ייתכן שתחול עליך חובה ליידע אנשים אחרים שמצולמים, למשל עובדים או אורחים, ולפעול לפי הדין החל עליך. Haven אינה מבצעת זיהוי פנים ואינה משתפת צילומים עם המפתח.</p>
+  </section>
+
+  <section id="s11">
+    <h2>11. אבטחת מידע</h2>
+    <p>סודות נשמרים ב-Keychain המוצפן. התקשורת עם שירותי ענן מוצפנת (HTTPS/TLS) במידת האפשר. גיבוי שכולל סיסמאות מוצפן ב-AES-256-GCM בסיסמה שרק אתה יודע. תקשורת עם מכשירים ברשת המקומית עשויה להתבצע בפרוטוקולים של היצרן. מומלץ לשמור על רשת ביתית מאובטחת ולעדכן את המכשירים. אף שיטה אינה מאובטחת לחלוטין, אך מאחר שהמפתח אינו מחזיק במידע שלך, אין מאגר מרכזי שעלול לדלוף.</p>
+  </section>
+
+  <section id="s12">
+    <h2>12. שמירה, גיבוי ומחיקה</h2>
+    <ul>
+      <li>המידע נשמר כל עוד האפליקציה מותקנת או עד שתמחק אותו.</li>
+      <li>מחיקת האפליקציה מוחקת את המידע מהמכשיר. מידע שסונכרן ל-iCloud אפשר למחוק דרך הגדרות ← [השם שלך] ← iCloud ← ניהול אחסון.</li>
+      <li>גיבויים שיצרת ("הגדרות ← גיבוי ושחזור") נשמרים רק במקום שבחרת, ואתה יכול למחוק אותם בכל עת.</li>
+      <li>כדי למחוק מידע אצל ספקי צד שלישי, פנה לאותו ספק.</li>
+    </ul>
+  </section>
+
+  <section id="s13">
+    <h2>13. הזכויות שלך</h2>
+    <p>בהתאם לדין החל, לרבות חוק הגנת הפרטיות, ה-GDPR וה-CCPA, עומדות לך זכויות לעיין במידע עליך, לתקנו, למחוק אותו, להגביל את עיבודו ולהתנגד לו. מאחר שהמידע נמצא בשליטתך, אפשר לממש את רוב הזכויות ישירות באפליקציה ובמכשיר. אם אתה סבור שהמפתח מחזיק מידע עליך, למשל בפנייה שלך לתמיכה, אפשר לפנות אלינו ונטפל בבקשה בתוך 30 יום. אפשר גם להגיש תלונה לרשות להגנת הפרטיות או לרשות הפיקוח במדינתך.</p>
+  </section>
+
+  <section id="s14">
+    <h2>14. ילדים</h2>
+    <p>האפליקציה אינה מיועדת במיוחד לילדים, והמפתח אינו אוסף ביודעין מידע מילדים מתחת לגיל 13, או לגיל שנקבע בדין במדינתך. שליטה במכשירי הבית ובמצלמות צריכה להיעשות באחריות הורה או מבוגר.</p>
+  </section>
+
+  <section id="s15">
+    <h2>15. העברת מידע מחוץ לישראל</h2>
+    <p>המפתח אינו מעביר מידע. אם תבחר להשתמש ב-iCloud או בשירותי צד שלישי, המידע עשוי להישמר בשרתים של אותם ספקים מחוץ לישראל, בכפוף להסכמים ולמנגנוני ההגנה שלהם.</p>
+  </section>
+
+  <section id="s16">
+    <h2>16. שינויים במדיניות</h2>
+    <p>אם נשנה את המדיניות, הגרסה המעודכנת תפורסם בעמוד זה עם תאריך תוקף חדש. על שינוי מהותי, ובפרט כל שינוי שיכלול איסוף מידע, נודיע מראש באפליקציה או בעדכון שלה, ונבקש את הסכמתך כשהדין מחייב זאת.</p>
+  </section>
+
+  <section id="s17">
+    <h2>17. יצירת קשר</h2>
+    <p>שאלות, בקשות ותלונות בנושא פרטיות: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a>. אל תפרסם שם סיסמאות או מידע רגיש.</p>
+    <p class="meta">במקרה של סתירה בין הנוסח העברי לנוסח האנגלי, הנוסח העברי קובע.</p>
+  </section>
+  <section class="en" dir="ltr" lang="en" id="en">
     <h2>Privacy Policy (English)</h2>
-    <p>Haven does not collect, transmit, sell or share personal data with the developer or anyone else. There is no account, analytics, advertising or developer server.</p>
-    <ul>
-      <li><strong>Your home data</strong> (plan, rooms, devices, automations, settings) is stored on your devices and, if you enable sync, in your own iCloud. The developer has no access to it.</li>
-      <li><strong>Passwords and tokens</strong> for services you connect are stored in the device Keychain and synced with your iCloud Keychain.</li>
-      <li><strong>Third-party services</strong> you connect (e.g. Tuya, eWeLink, Shelly, Switcher, cameras, Google Drive) are contacted directly on your behalf, only to do what you ask, and are governed by their own privacy policies.</li>
-      <li><strong>Permissions</strong> (HomeKit, local network, location, camera/LiDAR, microphone) are used only for the features described in the app.</li>
-    </ul>
-    <p>Contact: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+    <p class="meta">Effective November 13, 2026 · Version 1.0</p>
+    <div class="box"><p><strong>Summary.</strong> Haven runs on your devices. The developer operates no servers for the app, collects no personal data, uses no analytics or advertising, and never sells or shares data. Your home data stays with you: on your devices, in your iCloud account, and on your own Haven Hub if you install it. When you connect a third-party service, Haven communicates with it directly on your behalf, only to do what you ask.</p></div>
+    <h3>1. Who we are and scope</h3>
+    <p>This policy covers the Haven app for iPhone, iPad, Mac and Apple Watch and the optional Haven Hub companion software, developed and distributed by Nadav Behar ("the developer", "we"). It is written in light of the Israeli Protection of Privacy Law, 5741-1981 (including Amendment 13), the EU GDPR, the California CCPA/CPRA and Apple's App Store Review Guidelines. Use of the app is also subject to <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's Standard EULA</a>. Because the developer does not collect or process your personal data, the developer is not a controller or database owner of the data kept on your devices and accounts. You control it.</p>
+    <h3>2. Data we do not collect</h3>
+    <p>No accounts or sign-in, no developer servers, no analytics, no tracking, no advertising identifiers (IDFA), no ads and no third-party data-collection SDKs. We do not sell or "share" data for advertising or profiling. <strong>Crash reports:</strong> if you opt in to share analytics with app developers in your device settings, Apple may provide the developer with crash reports and aggregate performance data that do not identify you. These are used only to fix bugs, and you can turn this off at any time.</p>
+    <h3>3. Data stored on your devices</h3>
+    <p>To work, the app stores what you enter or connect: your home plan and 3D model, devices and their names, room placement, state and local network addresses, automations, announcement rules and settings, home location (for sunrise and sunset), event and energy history. Passwords, API keys and tokens are kept in the encrypted Apple Keychain. The developer cannot access any of it.</p>
+    <h3>4. Sync and household sharing</h3>
+    <p>If sync is enabled, settings sync between your devices through your own iCloud account (CloudKit and iCloud Keychain), under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Your Haven devices on the same home network may also sync directly over the local network. Household members you invite receive access to the home's settings and the credentials needed to control devices, including shared service keys. Invite only people you trust; you can revoke access at any time.</p>
+    <h3>5. Haven Hub</h3>
+    <p>The optional Hub runs on your own Mac, on your home network. It stores its settings, credentials for services you connect to it, camera images and backups you create on that Mac. App access to the Hub is protected by an access token. The Hub sends nothing to the developer.</p>
+    <h3>6. Third-party services and devices</h3>
+    <p>When you choose to connect a service or device (for example Tuya / Smart Life, eWeLink, Shelly, Switcher, Miele, PalGate, Eufy, Baseus, Samsung TVs, Matter devices, Google Drive, or text-to-speech providers such as Google, OpenAI, ElevenLabs, Cartesia or Gemini using your own key), the app or Hub communicates with it directly, using your account, only to display information and carry out your commands. Only what is necessary is sent, such as your sign-in, the command or the announcement text for a voice provider. These providers' own terms and privacy policies apply, and the developer is not responsible for their practices. You can disconnect any service at any time.</p>
+    <h3>7. HomeKit data</h3>
+    <p>HomeKit data is used solely to show and control your home at your request. As Apple requires, it is never used for advertising or data mining, never disclosed to third parties, and never used for any other purpose.</p>
+    <h3>8. Device permissions</h3>
+    <p>Permissions are requested only when needed and can be revoked in Settings; the related feature then stops working. HomeKit: show and control accessories. Local network: discover and talk to devices, cameras and the Hub. Location (while using): sunrise and sunset only, and it is never transmitted. Camera/LiDAR: room scanning, processed on device. Microphone: two-way talk through cameras and doorbells, only when you start it. Notifications: alerts generated on your device or Hub.</p>
+    <h3>9. AI and voice</h3>
+    <p>The assistant runs on a local engine or, where supported, Apple Intelligence, which processes requests on device under Apple's policies. The developer does not receive what you type to the assistant.</p>
+    <h3>10. Cameras and recordings</h3>
+    <p>Streams and images travel directly from the camera, its service or your Hub to your device, and are stored only where you choose. If you install cameras, you may be legally required to inform people who are recorded, such as employees or guests, and to comply with applicable law. Haven performs no facial recognition and shares no footage with the developer.</p>
+    <h3>11. Security</h3>
+    <p>Secrets are kept in the encrypted Keychain. Cloud communication uses HTTPS/TLS where available. Backups that include passwords are encrypted with AES-256-GCM using a password only you know. Some local devices use their manufacturer's protocols, so keep your home network secure and your devices updated. No method is perfectly secure, but because the developer holds none of your data, there is no central database that could leak.</p>
+    <h3>12. Retention and deletion</h3>
+    <p>Data is kept until you delete it or the app. Deleting the app removes its data from the device. Synced data can be removed in Settings → [your name] → iCloud → Manage Storage. Backups are stored only where you put them. To delete data held by a third-party provider, contact that provider.</p>
+    <h3>13. Your rights</h3>
+    <p>Depending on where you live (for example under Israeli law, the GDPR or the CCPA), you may have rights to access, correct, delete, restrict or object to processing of your data. Since the data is under your control, most can be exercised directly in the app and on your device. If you believe the developer holds data about you, for instance from a support request, contact us and we will respond within 30 days. You may also complain to the Israeli Privacy Protection Authority or your local supervisory authority.</p>
+    <h3>14. Children</h3>
+    <p>The app is not directed at children, and the developer does not knowingly collect data from children under 13 or the age set by local law. Control of home devices and cameras should be under adult supervision.</p>
+    <h3>15. International transfers</h3>
+    <p>The developer transfers no data. If you use iCloud or third-party services, your data may be stored on their servers outside Israel under their safeguards.</p>
+    <h3>16. Changes</h3>
+    <p>We will post any update here with a new effective date. For material changes, and especially any change involving data collection, we will give notice in the app or its update in advance, and ask for your consent where required by law.</p>
+    <h3>17. Contact</h3>
+    <p>Privacy questions, requests and complaints: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a>. Please do not post passwords or sensitive information there. If the Hebrew and English versions conflict, the Hebrew version prevails.</p>
   </section>
 </main>
 </body>
