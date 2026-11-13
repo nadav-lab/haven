@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>פרטיות – Haven</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@600&display=swap">
+<style>
+:root {
+  --bg: #faf7f1; --fg: #1d1a16; --muted: #6b6257; --line: #e7dfd2; --accent: #9a6b1f;
+  --display: "Frank Ruhl Libre", "Times New Roman", serif;
+  --body: "Assistant", "Arial Hebrew", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; margin: 0; }
+main { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-family: var(--display); font-size: 2rem; margin: 0 0 4px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 28px; }
+h2 { font-size: 1.15rem; margin: 30px 0 6px; color: var(--accent); text-wrap: balance; }
+p, li { margin: 0 0 10px; }
+ul { padding-inline-start: 22px; margin: 0 0 10px; }
+section { border-top: 1px solid var(--line); }
+a { color: var(--accent); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 24px; font-weight: 600; }
+.icon { width: 120px; height: 120px; border-radius: 26px; display: block; margin: 0 0 16px; }
+.en { direction: ltr; text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Haven</a><a href="privacy.html">פרטיות · Privacy</a><a href="support.html">תמיכה · Support</a></nav>
+  <h1>Haven – מדיניות פרטיות</h1>
+  <p class="meta">עודכן לאחרונה: 13 בנובמבר 2026</p>
+  <section>
+    <h2>בקצרה</h2>
+    <p>Haven אינה אוספת, שולחת, מוכרת או משתפת מידע אישי עם המפתח או עם אף גורם אחר. אין באפליקציה חשבון, אנליטיקה, פרסומות או שרת של המפתח.</p>
+  </section>
+  <section>
+    <h2>איפה נשמר המידע על הבית</h2>
+    <ul>
+      <li><strong>במכשירים שלך:</strong> תוכנית הבית, החדרים, המכשירים, האוטומציות וההגדרות.</li>
+      <li><strong>ב-iCloud שלך:</strong> אם הפעלת סנכרון, כדי שהמידע יופיע באייפון, באייפד ובמק שלך ואצל בני הבית שהזמנת. המפתח לא יכול לגשת אליו.</li>
+      <li><strong>סיסמאות וטוקנים</strong> של שירותים שחיברת (למשל Tuya או eWeLink) נשמרים ב-Keychain של המכשיר, ומסונכרנים ב-iCloud Keychain שלך.</li>
+      <li><strong>Haven Hub</strong> (לא חובה) רץ על המק שלך, ברשת הביתית שלך.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>חיבור לשירותים של צד שלישי</h2>
+    <p>כשאתה מחבר חשבון או מכשיר (למשל Tuya, eWeLink, Shelly, Switcher, מצלמות או Google Drive), Haven מתקשרת ישירות עם השירות או המכשיר הזה בשמך, רק כדי להפעיל את מה שביקשת. השימוש בשירותים אלה כפוף למדיניות הפרטיות שלהם.</p>
+  </section>
+  <section>
+    <h2>הרשאות</h2>
+    <ul>
+      <li><strong>HomeKit:</strong> להצגה ולשליטה במכשירים שלך.</li>
+      <li><strong>רשת מקומית:</strong> לאיתור מכשירים ומצלמות בבית ולשליטה בהם.</li>
+      <li><strong>מיקום:</strong> רק לחישוב שעות הזריחה והשקיעה לאוטומציות.</li>
+      <li><strong>מצלמה ו-LiDAR:</strong> רק לסריקת חדרים לבניית המודל, אם בחרת בכך.</li>
+      <li><strong>מיקרופון:</strong> רק לדיבור דרך מצלמות ופעמון, אם בחרת בכך.</li>
+    </ul>
+  </section>
+  <section>
+    <h2>מחיקה</h2>
+    <p>מחיקת האפליקציה מוחקת את המידע מהמכשיר. מידע שסונכרן נמחק מ-iCloud דרך הגדרות ← [השם שלך] ← iCloud.</p>
+  </section>
+  <section>
+    <h2>יצירת קשר</h2>
+    <p>שאלות על המדיניות: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+  </section>
+  <section class="en" dir="ltr" lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>Haven does not collect, transmit, sell or share personal data with the developer or anyone else. There is no account, analytics, advertising or developer server.</p>
+    <ul>
+      <li><strong>Your home data</strong> (plan, rooms, devices, automations, settings) is stored on your devices and, if you enable sync, in your own iCloud. The developer has no access to it.</li>
+      <li><strong>Passwords and tokens</strong> for services you connect are stored in the device Keychain and synced with your iCloud Keychain.</li>
+      <li><strong>Third-party services</strong> you connect (e.g. Tuya, eWeLink, Shelly, Switcher, cameras, Google Drive) are contacted directly on your behalf, only to do what you ask, and are governed by their own privacy policies.</li>
+      <li><strong>Permissions</strong> (HomeKit, local network, location, camera/LiDAR, microphone) are used only for the features described in the app.</li>
+    </ul>
+    <p>Contact: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+  </section>
+</main>
+</body>
+</html>

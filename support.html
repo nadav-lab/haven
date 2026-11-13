@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>תמיכה – Haven</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@600&display=swap">
+<style>
+:root {
+  --bg: #faf7f1; --fg: #1d1a16; --muted: #6b6257; --line: #e7dfd2; --accent: #9a6b1f;
+  --display: "Frank Ruhl Libre", "Times New Roman", serif;
+  --body: "Assistant", "Arial Hebrew", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; margin: 0; }
+main { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-family: var(--display); font-size: 2rem; margin: 0 0 4px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 28px; }
+h2 { font-size: 1.15rem; margin: 30px 0 6px; color: var(--accent); text-wrap: balance; }
+p, li { margin: 0 0 10px; }
+ul { padding-inline-start: 22px; margin: 0 0 10px; }
+section { border-top: 1px solid var(--line); }
+a { color: var(--accent); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 24px; font-weight: 600; }
+.icon { width: 120px; height: 120px; border-radius: 26px; display: block; margin: 0 0 16px; }
+.en { direction: ltr; text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Haven</a><a href="privacy.html">פרטיות · Privacy</a><a href="support.html">תמיכה · Support</a></nav>
+  <h1>Haven – תמיכה</h1>
+  <p class="meta">הבית החכם שלך, בתלת-ממד.</p>
+  <section>
+    <h2>יצירת קשר</h2>
+    <p>לשאלות, תקלות והצעות: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+  </section>
+  <section>
+    <h2>שאלות נפוצות</h2>
+    <p><strong>איך מתחילים?</strong> בהפעלה הראשונה מאשרים גישה ל-HomeKit, והמכשירים שלך מופיעים. את החדרים בונים בלשונית "תוכנית", בסריקה, או בעזרת העוזר ("יש לי סלון, מטבח ו-2 חדרי שינה").</p>
+    <p><strong>מה זה Haven Hub?</strong> תוכנה לא חובה שרצה על המק בבית ומרחיבה את השליטה במצלמות, בטלוויזיה ובהכרזות בהום פוד. האפליקציה עובדת גם בלעדיו.</p>
+    <p><strong>איך מגבים?</strong> הגדרות ← "גיבוי ושחזור". אפשר לשמור קובץ, או לשמור ב-Hub.</p>
+    <p><strong>למה הגג לא מופיע בתלת-ממד?</strong> הגג מוסתר בתצוגת חתך. לוחצים על כפתור הבית בראש המסך כדי לראות קירות מלאים וגג.</p>
+    <p><strong>האם המידע שלי נשמר אצלכם?</strong> לא. הכול נשמר במכשירים ובחשבון iCloud שלך. <a href="privacy.html">מדיניות הפרטיות</a>.</p>
+  </section>
+  <section class="en" dir="ltr" lang="en">
+    <h2>Support (English)</h2>
+    <p>Questions, bugs and suggestions: <a href="https://github.com/nadav-lab/haven/issues">github.com/nadav-lab/haven/issues</a></p>
+    <p><strong>Getting started:</strong> allow HomeKit access on first launch and your accessories appear. Build rooms in the Plan tab, with a scan, or by telling the assistant which rooms you have.</p>
+    <p><strong>Haven Hub</strong> is an optional companion for your Mac that extends cameras, TV and HomePod announcements. The app works without it.</p>
+    <p><strong>Backup:</strong> Settings → Backup &amp; Restore.</p>
+  </section>
+</main>
+</body>
+</html>

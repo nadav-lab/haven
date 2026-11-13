@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haven – הבית החכם שלך</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Frank+Ruhl+Libre:wght@600&display=swap">
+<style>
+:root {
+  --bg: #faf7f1; --fg: #1d1a16; --muted: #6b6257; --line: #e7dfd2; --accent: #9a6b1f;
+  --display: "Frank Ruhl Libre", "Times New Roman", serif;
+  --body: "Assistant", "Arial Hebrew", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #15120e; --fg: #f3ede4; --muted: #b4a998; --line: #2e2820; --accent: #e0b25c; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; margin: 0; }
+main { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-family: var(--display); font-size: 2rem; margin: 0 0 4px; text-wrap: balance; }
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 28px; }
+h2 { font-size: 1.15rem; margin: 30px 0 6px; color: var(--accent); text-wrap: balance; }
+p, li { margin: 0 0 10px; }
+ul { padding-inline-start: 22px; margin: 0 0 10px; }
+section { border-top: 1px solid var(--line); }
+a { color: var(--accent); }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: 0 0 24px; font-weight: 600; }
+.icon { width: 120px; height: 120px; border-radius: 26px; display: block; margin: 0 0 16px; }
+.en { direction: ltr; text-align: left; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Haven</a><a href="privacy.html">פרטיות · Privacy</a><a href="support.html">תמיכה · Support</a></nav>
+  <img class="icon" src="icon.png" alt="">
+  <h1>Haven</h1>
+  <p class="meta">הבית החכם שלך, בתלת-ממד. לאייפון, לאייפד, למק ול-Apple Watch.</p>
+  <section>
+    <h2>מה יש בה</h2>
+    <ul>
+      <li>מודל תלת-ממדי של הבית: חדרים, ריהוט, גינה, גגות, מבנים נוספים והרחוב, ובכל רגע רואים מה דלוק ומה פתוח</li>
+      <li>שליטה במכשירי HomeKit ו-Matter, וגם Switcher, Shelly, Tuya / Smart Life, eWeLink, Miele ו-PalGate</li>
+      <li>מצלמות: צפייה חיה, אירועים והתראות</li>
+      <li>שלט לטלוויזיית Samsung, כולל עוצמה מדויקת</li>
+      <li>הכרזות בעברית בהום פוד כשמשהו קורה בבית</li>
+      <li>אוטומציות לפי שעה, זריחה ושקיעה ומצב הבית</li>
+      <li>עוזר שמסדר חדרים, משבץ מכשירים ומבצע פקודות</li>
+      <li>גיבוי ושחזור של כל ההגדרות</li>
+    </ul>
+    <p>בלי חשבון ובלי איסוף נתונים: המידע על הבית נשמר רק אצלך. <a href="privacy.html">מדיניות הפרטיות</a>.</p>
+  </section>
+  <section class="en" dir="ltr" lang="en">
+    <h2>Your smart home, in 3D</h2>
+    <p>Haven brings your whole smart home into one app for iPhone, iPad, Mac and Apple Watch: a live 3D model of your home, HomeKit and Matter accessories plus Switcher, Shelly, Tuya, eWeLink, Miele and PalGate, cameras, a Samsung TV remote, Hebrew HomePod announcements, automations and an assistant. No account, no data collection.</p>
+  </section>
+  <section>
+    <p class="meta">HomeKit, HomePod ו-Apple Watch הם סימנים מסחריים של Apple. שאר הסימנים המסחריים שייכים לבעליהם. Haven אינה קשורה ליצרנים אלה.</p>
+  </section>
+</main>
+</body>
+</html>
